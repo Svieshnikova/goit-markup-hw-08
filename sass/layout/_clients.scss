@@ -15,6 +15,7 @@
   // display: flex;
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 .clients__picture {
   // flex-basis: calc(100% / 6 - 150px);
@@ -23,12 +24,13 @@
   // }
 
   flex-basis: calc(100% / 2 - 30px);
-  &:not(:nth-child(2n)) {
-    margin-right: 30px;
-  }
-  &:not(:nth-last-child(-n + 2)) {
-    margin-bottom: 30px;
-  }
+  // &:not(:nth-child(2n)) {
+  //   margin-right: 30px;
+  // }
+  // &:not(:nth-last-child(-n + 2)) {
+  //   margin-bottom: 30px;
+  // }
+  margin: 15px;
 }
 
 .clients-picture__link {

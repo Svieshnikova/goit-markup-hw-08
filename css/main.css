@@ -793,18 +793,12 @@ body {
 .clients-box {
   display: flex;
   flex-wrap: wrap;
+  margin: -15px;
 }
 
 .clients__picture {
   flex-basis: calc(100% / 2 - 30px);
-}
-
-.clients__picture:not(:nth-child(2n)) {
-  margin-right: 30px;
-}
-
-.clients__picture:not(:nth-last-child(-n + 2)) {
-  margin-bottom: 30px;
+  margin: 15px;
 }
 
 .clients-picture__link {
