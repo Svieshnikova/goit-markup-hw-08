@@ -8,13 +8,20 @@
   margin-bottom: 50px;
 }
 .clients-box {
+  // display: flex;
   display: flex;
+  flex-wrap: wrap;
 }
 .clients__picture {
-  flex-basis: calc(100% / 6 - 150px);
-  &:not(:last-child) {
+  // flex-basis: calc(100% / 6 - 150px);
+  // &:not(:last-child) {
+  //   margin-right: 30px;
+  // }
+  flex-basis: calc((100% - 60px) / 2);
+  &:not(:nth-child(2n)) {
     margin-right: 30px;
   }
+  margin-bottom: 30px;
 }
 
 .clients-picture__link {
