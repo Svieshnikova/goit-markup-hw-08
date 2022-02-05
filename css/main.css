@@ -627,6 +627,24 @@ body {
   color: var(--text-color);
 }
 
+@media screen and (min-width: 386px) {
+  .mobile-work {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .mobile-work {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .mobile-work {
+    display: inline;
+  }
+}
+
 .work {
   padding-top: 0;
 }
