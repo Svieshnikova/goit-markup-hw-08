@@ -1,22 +1,11 @@
-.mobile-work {
-  @media screen and (min-width: 386px) {
-    display: none;
-  }
-}
-.mobile-work {
-  @media screen and (min-width: 786px) {
-    display: none;
-  }
-}
-.mobile-work {
+.work {
+  display: none;
+  padding-top: 0;
   @media screen and (min-width: 1200px) {
-    display: inline;
+    display: block;
   }
 }
 
-.work {
-  padding-top: 0;
-}
 .work__list {
   display: flex;
   flex-wrap: wrap;

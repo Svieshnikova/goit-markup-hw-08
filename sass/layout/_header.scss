@@ -5,7 +5,7 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-color);
-  margin-right: 93px;
+  // margin-right: 93px;
 }
 .logo-dark {
   color: #000000;
@@ -19,9 +19,9 @@
   border-bottom: 1px solid #ececec;
 }
 .header__conteiner {
-  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 .subtitle__list {
   display: flex;
