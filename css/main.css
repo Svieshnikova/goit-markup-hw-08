@@ -87,9 +87,10 @@ body {
   padding-left: 15px;
   margin: 0 auto;
   outline: 2px solid orange;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  justify-content: space-between;
 }
 
 .section {
@@ -371,9 +372,9 @@ body {
 }
 
 .header {
-  padding-top: 24px;
-  padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .header__conteiner {
@@ -475,6 +476,7 @@ body {
 }
 
 .contacts__item {
+  display: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -588,7 +590,7 @@ body {
 .mob-menu-social-list {
   display: flex;
   justify-content: space-between;
-  margin-bottom: auto;
+  margin-bottom: 0;
 }
 
 .mob-menu-social-item {
@@ -599,7 +601,6 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--second-color);
-  margin-bottom: 0;
 }
 
 .mob-menu-social-item:not(:last-child) {
