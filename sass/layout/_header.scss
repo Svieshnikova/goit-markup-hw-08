@@ -1,12 +1,14 @@
 .logo__block {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  // font-size: 26px;
+  // line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-color);
   // margin-right: 93px;
   margin-right: auto;
+  font-size: 24px;
+  line-height: 1.17;
 }
 .logo-dark {
   color: #000000;
@@ -28,9 +30,9 @@
   // align-items: center;
   // justify-content: space-between;
 }
-.subtitle {
-  display: none;
-}
+// .subtitle {
+//   display: none;
+// }
 .subtitle__list {
   // display: flex;
   display: block;
@@ -114,7 +116,7 @@
   // margin-left: auto;
 }
 .contacts__item {
-  display: none;
+  // display: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -138,6 +140,7 @@
 }
 .header__menu-conteiner {
   display: flex;
+  align-items: center;
 }
 .menu-open-btn {
   display: flex;
@@ -145,7 +148,14 @@
   border: 0;
   border-color: #ffffff;
   background-color: #ffffff;
+  padding: 0;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: var(--second-color);
+  }
 }
+
 .mob-menu {
   position: fixed;
   background-color: #ffffff;
@@ -156,8 +166,12 @@
   z-index: 1;
   padding-top: 10px;
   padding-bottom: 48px;
-}
 
+  transition: left 600ms, visibility 600ms;
+}
+.mob-menu.is-hidden {
+  left: 100%;
+}
 .menu-close-btn {
   margin-left: auto;
   display: block;

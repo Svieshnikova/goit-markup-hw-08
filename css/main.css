@@ -357,11 +357,11 @@ body {
 .logo__block {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--second-color);
   margin-right: auto;
+  font-size: 24px;
+  line-height: 1.17;
 }
 
 .logo-dark {
@@ -379,10 +379,6 @@ body {
 }
 
 .header__conteiner {
-  display: none;
-}
-
-.subtitle {
   display: none;
 }
 
@@ -474,7 +470,6 @@ body {
 }
 
 .contacts__item {
-  display: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
@@ -501,6 +496,7 @@ body {
 
 .header__menu-conteiner {
   display: flex;
+  align-items: center;
 }
 
 .menu-open-btn {
@@ -509,6 +505,12 @@ body {
   border: 0;
   border-color: #ffffff;
   background-color: #ffffff;
+  padding: 0;
+  cursor: pointer;
+}
+
+.menu-open-btn:hover, .menu-open-btn:focus {
+  color: var(--second-color);
 }
 
 .mob-menu {
@@ -521,6 +523,11 @@ body {
   z-index: 1;
   padding-top: 10px;
   padding-bottom: 48px;
+  transition: left 600ms, visibility 600ms;
+}
+
+.mob-menu.is-hidden {
+  left: 100%;
 }
 
 .menu-close-btn {
