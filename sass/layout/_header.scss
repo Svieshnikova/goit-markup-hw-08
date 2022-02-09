@@ -1,11 +1,10 @@
 .logo__block {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  // font-size: 26px;
-  // line-height: 1.19;
+
   letter-spacing: 0.03em;
   color: var(--second-color);
-  // margin-right: 93px;
+
   margin-right: auto;
   font-size: 24px;
   line-height: 1.17;
@@ -25,8 +24,6 @@
   color: #ffffff;
 }
 .header {
-  // padding-top: 24px;
-  // padding-bottom: 25px;
   border-bottom: 1px solid #ececec;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -36,7 +33,6 @@
   }
 }
 .header__conteiner {
-  // display: flex;
   display: none;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -46,7 +42,6 @@
 }
 
 .subtitle__list {
-  // display: flex;
   display: block;
   @media screen and (min-width: 768px) {
     display: flex;
@@ -126,18 +121,14 @@
 }
 
 .contacts__list {
-  // display: flex;
-  // align-items: center;
   margin-left: auto;
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: center;
     margin-left: auto;
   }
-  // margin-left: auto;
 }
 .contacts__item {
-  // display: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
