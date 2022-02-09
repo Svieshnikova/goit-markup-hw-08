@@ -581,6 +581,10 @@ body {
   margin-bottom: auto;
 }
 
+.mob-menu-contacts__list {
+  margin-bottom: 64px;
+}
+
 .mob-menu-social-list {
   display: flex;
   justify-content: space-between;
@@ -595,6 +599,7 @@ body {
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--second-color);
+  margin-bottom: 0;
 }
 
 .mob-menu-social-item:not(:last-child) {
