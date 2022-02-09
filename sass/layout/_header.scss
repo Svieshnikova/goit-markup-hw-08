@@ -6,6 +6,7 @@
   letter-spacing: 0.03em;
   color: var(--second-color);
   // margin-right: 93px;
+  margin-right: auto;
 }
 .logo-dark {
   color: #000000;
@@ -21,15 +22,18 @@
   padding-bottom: 16px;
 }
 .header__conteiner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+  // display: flex;
+  display: none;
+
+  // align-items: center;
+  // justify-content: space-between;
 }
 .subtitle {
   display: none;
 }
 .subtitle__list {
-  display: flex;
+  // display: flex;
+  display: block;
 }
 .subtitle__item {
   font-weight: 500;
@@ -107,7 +111,7 @@
 .contacts__list {
   display: flex;
   align-items: center;
-  margin-left: auto;
+  // margin-left: auto;
 }
 .contacts__item {
   display: none;
@@ -132,8 +136,11 @@
   fill: currentColor;
   margin-right: 10px;
 }
+.header__menu-conteiner {
+  display: flex;
+}
 .menu-open-btn {
-  // display: flex;
+  display: flex;
   margin-left: auto;
   border: 0;
   border-color: #ffffff;
