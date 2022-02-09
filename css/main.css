@@ -530,6 +530,11 @@ body {
   justify-content: center;
   width: 40px;
   height: 40px;
+  cursor: pointer;
+}
+
+.menu-close-btn:hover, .menu-close-btn:focus {
+  color: var(--second-color);
 }
 
 .mob-menu__item:not(:last-child) {
