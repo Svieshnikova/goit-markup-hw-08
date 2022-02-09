@@ -87,13 +87,9 @@ body {
   padding-left: 15px;
   margin: 0 auto;
   outline: 2px solid orange;
-}
-
-@media screen and (min-width: 480px) {
-  .conteiner-mob {
-    width: 480px;
-    height: 796px;
-  }
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
 
 .section {
@@ -386,6 +382,10 @@ body {
   justify-content: space-between;
 }
 
+.subtitle {
+  display: none;
+}
+
 .subtitle__list {
   display: flex;
 }
@@ -518,10 +518,6 @@ body {
   padding-bottom: 48px;
 }
 
-.conteiner-mob {
-  position: relative;
-}
-
 .menu-close-btn {
   margin-left: auto;
   display: block;
@@ -565,7 +561,6 @@ body {
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: var(--second-color);
-  margin-bottom: 32px;
 }
 
 .mob-contacts-mail__link {
@@ -577,8 +572,32 @@ body {
   color: var(--text-color);
 }
 
-.mob-menu-nav {
-  margin-bottom: 102px;
+.mob-menu__list {
+  margin-bottom: auto;
+}
+
+.mob-menu-social-list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: auto;
+}
+
+.mob-menu-social-item {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+}
+
+.mob-menu-social-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.mob-menu-social-icon {
+  fill: currentColor;
 }
 
 .hero-content {
