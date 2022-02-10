@@ -3,9 +3,13 @@
   padding-top: 60px;
   padding-bottom: 60px;
 }
+.footer__conteiner {
+  text-align: center;
+}
 .connect-container {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
+  display: block;
 }
 .logo__box {
   font-family: Raleway, sans-serif;
@@ -18,6 +22,7 @@
 .address {
   margin-top: 20px;
 }
+
 .address__map {
   font-style: normal;
   font-weight: normal;
@@ -41,10 +46,15 @@
 }
 
 .connect-box {
-  flex-grow: 1;
+  // flex-grow: 1;
+  margin-bottom: 60px;
 }
 .social-network {
-  margin-left: 70px;
+  // margin-left: 70px;
+
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
 }
 b {
   font-weight: 700;
@@ -53,7 +63,7 @@ b {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #ffffff;
-  text-align: left;
+  // text-align: left;
   justify-content: center;
 }
 .social-network__link {

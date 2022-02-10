@@ -1,10 +1,12 @@
 .subscription {
-  margin-left: 93px;
+  // margin-left: 93px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subs-box {
-  display: flex;
-  align-items: baseline;
+  // display: flex;
+  // align-items: baseline;
   margin-top: 20px;
 }
 .form-input__subscription {
@@ -28,6 +30,7 @@
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
   }
+  margin-bottom: 20px;
 }
 
 .subscription__btn {
@@ -55,6 +58,8 @@
   &:focus {
     background: #188ce8;
   }
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .send-subscription {
