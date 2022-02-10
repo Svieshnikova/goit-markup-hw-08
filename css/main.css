@@ -150,6 +150,7 @@ body {
 }
 
 .backdrop {
+  padding: 15px;
   position: fixed;
   top: 0;
   width: 100vw;
@@ -158,21 +159,32 @@ body {
   transition: opacity 500ms, visibility 500ms;
 }
 
+@media screen and (min-width: 580px) {
+  .backdrop {
+    padding: 0;
+  }
+}
+
 .backdrop.is-hidden .modal {
   transform: scale(0.5);
 }
 
 .modal {
-  min-width: 528px;
-  min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
   transition: transform 600ms;
   padding: 40px 43px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal {
+    min-width: 528px;
+    min-height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 
 .modal-close {
@@ -216,7 +228,13 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-bottom: 12px;
+  margin-bottom: 42px;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-title {
+    margin-bottom: 12px;
+  }
 }
 
 .form-input {
@@ -294,13 +312,21 @@ body {
 }
 
 .check-text {
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
   display: flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 12px;
+  line-height: 1.17;
+}
+
+@media screen and (min-width: 768px) {
+  .check-text {
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 .check-text::before {
@@ -325,7 +351,13 @@ body {
 }
 
 .form-field-check {
-  margin-bottom: 20px;
+  margin-bottom: 31px;
+}
+
+@media screen and (min-width: 768px) {
+  .form-field-check {
+    margin-bottom: 20px;
+  }
 }
 
 .check-btn {

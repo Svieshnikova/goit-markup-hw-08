@@ -1,25 +1,32 @@
 .backdrop {
+  padding: 15px;
   position: fixed;
   top: 0;
   width: 100vw;
   height: 100vh;
   background-color: rgba(255, 255, 255, 0.4);
   transition: opacity 500ms, visibility 500ms;
+  @media screen and (min-width: 580px) {
+    padding: 0;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: scale(0.5);
 }
 .modal {
-  min-width: 528px;
-  min-height: 581px;
   background-color: #ffffff;
   border-radius: 4px;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%) scale(1);
+
   transition: transform 600ms;
   padding: 40px 43px;
+  @media screen and (min-width: 768px) {
+    min-width: 528px;
+    min-height: 581px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+  }
 }
 .modal-close {
   display: flex;
@@ -60,7 +67,11 @@
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--title-color);
-  margin-bottom: 12px;
+
+  margin-bottom: 42px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
 }
 .form-input {
   width: 100%;
@@ -131,13 +142,19 @@
 }
 
 .check-text {
-  font-size: 14px;
-  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--text-color);
   display: flex;
-  align-items: center;
-  justify-content: center;
+
+  font-size: 12px;
+  line-height: 1.17;
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.71;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
   &::before {
     content: "";
     width: 16px;
@@ -159,7 +176,10 @@
   color: var(--second-color);
 }
 .form-field-check {
-  margin-bottom: 20px;
+  margin-bottom: 31px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 20px;
+  }
 }
 .check-btn {
   border: none;
