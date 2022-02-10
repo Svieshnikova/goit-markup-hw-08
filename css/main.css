@@ -1122,12 +1122,32 @@ body {
   padding-bottom: 60px;
 }
 
-.footer__conteiner {
-  text-align: center;
+@media screen and (min-width: 360px) {
+  .footer__conteiner {
+    text-align: center;
+  }
 }
 
-.connect-container {
-  display: block;
+@media screen and (min-width: 1200px) {
+  .footer__conteiner {
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .connect-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect-container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .logo__box {
@@ -1171,10 +1191,29 @@ body {
   margin-bottom: 60px;
 }
 
+@media screen and (min-width: 1200px) {
+  .connect-box {
+    flex-grow: 1;
+  }
+}
+
 .social-network {
   margin-bottom: 60px;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .social-network {
+    margin-bottom: 102px;
+    margin-left: 165px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .social-network {
+    margin-left: 70px;
+  }
 }
 
 b {
@@ -1185,6 +1224,12 @@ b {
   text-transform: uppercase;
   color: #ffffff;
   justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  b {
+    text-align: left;
+  }
 }
 
 .social-network__link {
@@ -1222,8 +1267,21 @@ b {
   margin-right: auto;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscription {
+    margin-left: 93px;
+  }
+}
+
 .subs-box {
   margin-top: 20px;
+}
+
+@media screen and (min-width: 1200px) {
+  .subs-box {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .form-input__subscription {
@@ -1267,7 +1325,6 @@ b {
   border-radius: 4px;
   padding: 10px;
   cursor: pointer;
-  margin-left: 12px;
   padding-left: 29px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin-right: auto;
@@ -1276,6 +1333,12 @@ b {
 
 .subscription__btn:hover, .subscription__btn:focus {
   background: #188ce8;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscription__btn {
+    margin-left: 12px;
+  }
 }
 
 .send-subscription {
