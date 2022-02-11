@@ -173,7 +173,6 @@ body {
   position: relative;
   background-color: #ffffff;
   border-radius: 4px;
-  position: absolute;
   min-width: 90vw;
   min-height: 581px;
   transition: transform 600ms;
@@ -182,6 +181,7 @@ body {
 
 @media screen and (min-width: 768px) {
   .modal {
+    position: absolute;
     min-width: 528px;
     min-height: 581px;
     top: 50%;
