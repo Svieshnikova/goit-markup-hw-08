@@ -180,8 +180,15 @@
             
             <ul class="list work__list">
                
-                    <li class="work__item">            
-                <img src="./images/box1.png.jpg" alt="работа с компьютером">
+                    <li class="work__item">  
+                        <picture>
+                            <source srcset="./images/picteres/img-desc-klava@1-min.jpg 1x, 
+                                        ./images/picteres/img-desc-klava@2-min.jpg 2x"  />
+                            
+                            <img src="./images/box1.png.jpg" alt="работа с компьютером">
+                        </picture>
+
+               
                
                 <p class="work__text">десктопные приложения</p>
                
@@ -189,16 +196,28 @@
                 
             
            
-               <li class="work__item"><img src="./images/box2.png.jpg" alt="работа с телефоном">
-           
+               <li class="work__item">
+                <picture>
+                    <source srcset="./images/picteres/img-desc-phone@1-min.jpg 1x, 
+                                                        ./images/picteres/img-desc-phone@2-min.jpg 2x" />
+                
+                    <img src="./images/box2.png.jpg" alt="работа с телефоном">
+                </picture>
+                 
                <p class="work__text">мобильные приложения</p> 
          
             </li>
 
           
                <li class="work__item">
+                    <picture>
+                        <source srcset="./images/picteres/img-desc-pen@1-min.jpg 1x, 
+                                                                            ./images/picteres/img-desc-pen@2-min.jpg 2x" />
+                    
+                        <img src="./images/box3.png.jpg" alt="работа с планшетом">
+                    </picture>
                                 
-                <img src="./images/box3.png.jpg" alt="работа с планшетом">
+               
          
                 <p class="work__text">дизайнерские решения</p>
           
@@ -215,9 +234,21 @@
             <ul class="list team-list">
              
             <li class="team__item">
-                <img src="./images/Сотрудник1.jpg" alt="Игорь Демьяненко"
-                width="100%"
-                height="260">
+                <picture>
+                    <source  srcset="./images/team/igor-mob@1-min.jpg 1x, 
+                ./images/team/igor-mob@2-min.jpg 2x"
+                media="(min-width: 380px)"
+                />
+                <source srcset="./images/team/igor-tab@1-min.jpg 1x, 
+                                ./images/team/igor-tab@2-min.jpg 2x"
+                                 media="(min-width: 768px)" />
+                    <source srcset="./images/team/igor-desc@1-min.jpg 1x, 
+                                    ./images/team/igor-desc@2-min.jpg 2x"
+                                     media="(min-width: 1200px)" />
+                <img   src="./images/Сотрудник1.jpg" alt="Игорь Демьяненко"
+                               >
+                </picture>
+               
                 <div class="team-desk">
                 <h3 class="team__name">Игорь Демьяненко</h3>
                 <p class="team__text">Product Designer</p>
@@ -255,9 +286,16 @@
             </li>
 
                        <li class="team__item">
-                <img src="./images/Сотрудник2.jpg" alt="Ольга Репина"
-                width="100%"
-                height="260">
+                            <picture>
+                                <source srcset="./images/team/olga-mob@1-min.jpg 1x, 
+                                            ./images/team/olga-mob@2-min.jpg 2x" media="(min-width: 380px)" />
+                                <source srcset="./images/team/olga-tab@1-min.jpg 1x, 
+                                                            ./images/team/olga-tab@2-min.jpg 2x" media="(min-width: 768px)" />
+                                <source srcset="./images/team/olga-desc@1-min.jpg 1x, 
+                                                                ./images/team/olga-desc@2-min.jpg 2x" media="(min-width: 1200px)" />
+                                <img src="./images/Сотрудник2.jpg" alt="Игорь Демьяненко">
+                            </picture>
+              
                 <div class="team-desk">
                 <h3 class="team__name">Ольга Репина</h3>
                 <p class="team__text">Frontend Developer</p>
@@ -294,9 +332,16 @@
                 </div>
             </li>            
             <li class="team__item">
-                <img src="./images/Сотрудник3.jpg" alt="Николай Тарасов"
-                width="100%"
-                height="260">
+                <picture>
+                    <source srcset="./images/team/nikola-mob@1-min.jpg 1x, 
+                                ./images/team/nikola-mob@2-min.jpg 2x" media="(min-width: 380px)" />
+                    <source srcset="./images/team/nikola-tab@1-min.jpg 1x, 
+                                                ./images/team/nikola-tab@2-min.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/team/nikola-desc@1-min.jpg 1x, 
+                                                    ./images/team/nikola-desc@2-min.jpg 2x" media="(min-width: 1200px)" />
+                    <img src="./images/Сотрудник3.jpg" alt="Игорь Демьяненко">
+                </picture>
+               
                 <div class="team-desk">
                 <h3 class="team__name">Николай Тарасов</h3>
                 <p class="team__text">Marketing</p>
@@ -333,9 +378,16 @@
                 </div>
             </li> 
             <li class="team__item">
-                <img src="./images/Сотрудник4.jpg" alt="Михаил Ермаков"
-                width="100%"
-                height="260">
+                <picture>
+                    <source srcset="./images/team/mihail-mob@1-min.jpg 1x, 
+                                ./images/team/mihail-mob@2-min.jpg 2x" media="(min-width: 380px)" />
+                    <source srcset="./images/team/mihail-tab@1-min.jpg 1x, 
+                                                ./images/team/mihail-tab@2-min.jpg 2x" media="(min-width: 768px)" />
+                    <source srcset="./images/team/mihail-desc@1-min.jpg 1x, 
+                                                    ./images/team/mihail-desc@2-min.jpg 2x" media="(min-width: 1200px)" />
+                    <img src="./images/Сотрудник4.jpg" alt="Игорь Демьяненко">
+                </picture>
+              
                 <div class="team-desk">
                 <h3 class="team__name">Михаил Ермаков</h3>
                 <p class="team__text">Marketing</p>
