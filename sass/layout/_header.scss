@@ -5,7 +5,6 @@
   letter-spacing: 0.03em;
   color: var(--second-color);
 
-  margin-right: auto;
   font-size: 24px;
   line-height: 1.17;
   @media screen and (min-width: 768px) {
@@ -150,6 +149,8 @@
   &:focus {
     color: var(--second-color);
   }
+  display: flex;
+  align-items: center;
 }
 
 .contacts__icon {
